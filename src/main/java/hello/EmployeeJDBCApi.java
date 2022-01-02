@@ -1,10 +1,8 @@
 package hello;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -17,14 +15,14 @@ import org.apache.log4j.Logger;
 
 
 
-public class helloworld {
+public class EmployeeJDBCApi {
 
 	
-	private final Logger logger=Logger.getLogger(helloworld.class);
+	private final Logger logger=Logger.getLogger(EmployeeJDBCApi.class);
 	
 	private Connection con;
 	
-	public helloworld() throws IOException, ClassNotFoundException, SQLException {
+	public EmployeeJDBCApi() throws IOException, ClassNotFoundException, SQLException {
 		BasicConfigurator.configure();
 		Properties prop= new Properties();
 		
@@ -65,14 +63,6 @@ public class helloworld {
 		st.close();
 	}
 
-	public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException {
-		
-		
-		
-		
-		
-		
 	
-	}
 
 }

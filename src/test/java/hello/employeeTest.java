@@ -15,7 +15,7 @@ public class employeeTest {
 	@Test
 	public void sayHello() throws ClassNotFoundException, IOException, SQLException {
 		System.out.println("Hello");
-		helloworld he=new helloworld();
+		EmployeeJDBCApi he=new EmployeeJDBCApi();
 		he.delete();
 		he.insert();
 		ResultSet rs=he.select();
